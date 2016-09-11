@@ -6,8 +6,6 @@
 # get next 
 function select(n){return n+1}
 
-
-
 BEGIN{
 	FS="\t";
 	OFS="";
@@ -45,21 +43,5 @@ col["summary"]=27;
 	print > file
 }
 
-# head -1 facebase_AV_dataset.unl | awk -F"\t" '{for(i=1;i<=NF;i+=2)print $i}' | grep -n . | awk -F":" '{print ($1*2-1),$2}'
-
-#1 layout
-#3 title
-#5 date
-#7 categories
-#9 index
-#11 type
-#13 datatypes
-#15 identifier
-#17 rights
-#19 page
-#21 taxa
-#23 references
-#25 author
-#27 summary
 
 
