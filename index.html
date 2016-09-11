@@ -6,11 +6,8 @@ layout: default
     <div class="left">
       <h1> 'Axel Visel's FaceBase Datasets</h1>
       <p>
-        This is where  the data I am surfacing as a test for biocaddy is.
-        Enjoy it while it lasts.
       </p>
         <hr>
-        {% assign newcars = site.metadata | where: "category", "new" %}
         
         <ul>
             {% for post in site.metadata %}
@@ -73,6 +70,16 @@ layout: default
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
     <div class="right">
         <div class="wrap">
+            <div class="side">
+                <ul class="content-ul" recent>
+                    <div>
+                      <i class="fa fa-th-list" aria-hidden="true"></i>
+                      Source
+                    </div>
+                    <li><a href="{{site.github.repository_url}}">GitHub Repo</a></li>
+                    <li><a href="{{site.github.repository_url}}/blob/gh-pages/_metadata">MetaData</a></li>
+                </ul>
+            </div>
             <div class="side">
                 <div>
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

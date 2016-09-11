@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/biodatabases/mybiocaddie.svg?branch=master)](https://travis-ci.org/biodatabases/mybiocaddie)
+[![Build Status](https://travis-ci.org/biodatabases/mybiocaddie.svg?branch=gh-pages)](https://travis-ci.org/biodatabases/mybiocaddie)
 
 # My BioCaddie
 
@@ -8,13 +8,16 @@ To see instructions, go to: https://biodatasets.github.io/mybiocaddie/
 
 (remember the trailing slash)
 
-Jekyll template adapted from: https://github.com/Gaohaoyang/gaohaoyang.github.io/*
-
 # Tracking this repo
 
-The repo at biodatasets/mybiocaddie is designed to be forked and customized.
+Once you have forked this repo (see above), you should modify the entry for `repository:` in `_config.yml`.
 
-Occasionally there will be source changes in HTML layout etc. You can track these as follows.
+Occasionally there will be source changes in HTML layout etc in the
+source
+[biodatasets/mybiocaddie](https://github.com/biodatasets/mybiocaddie)
+repo. You can track these as follows:
+
+
 
 First do a one time command in your forked repo, once cloned:
 
@@ -29,3 +32,7 @@ git fetch upstream && git merge upstream/gh-pages
 ```
 
 It is probably best if you do NOT try anything in the reverse direction. If you want to see changes file a ticket directly on biodatasets/mybiocaddie
+
+# Indexing
+
+IndexMeOnBioCaddie

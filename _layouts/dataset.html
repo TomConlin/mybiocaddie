@@ -28,6 +28,10 @@ layout: default
             {% include tag.html %}
             </div>
 
+            <!-- See https://github.com/jekyll/jekyll-help/issues/5#issuecomment-39033862 -->
+            <div class="fa fa-github">
+              <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}" title="GitHub">Metadata Source</a>
+            </div>
         </div>
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
@@ -86,6 +90,12 @@ layout: default
                     {% endfor %}
                     {% for pageurl in page.page %}
                     <li>Page: <a href="{{ pageurl }}"</a>{{ pageurl }}</li>
+                    {% endfor %}
+                    {% for accessURL in page.accessURL %}
+                    <li>Access: <a href="{{ accessURL }}"</a>{{ accessURL }}</li>
+                    {% endfor %}
+                    {% for browseURL in page.browseURL %}
+                    <li>Browse: <a href="{{ browseURL }}"</a>{{ browseURL }}</li>
                     {% endfor %}
                   </ul>
                     <li><a href="#comments">Comments</a></li>
